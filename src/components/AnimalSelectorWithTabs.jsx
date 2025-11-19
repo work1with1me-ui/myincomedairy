@@ -553,7 +553,7 @@ import TabContent from "./TabContent";
 import { Menu, Sidebar } from 'lucide-react';
 import { ModernSidebar } from "./ModernSidebar";
 import AnimalSelector from "./AnimalSelector";
-import { useSidebar } from "../context/sidebarContext";
+import { useSidebar } from "../context/SidebarContext";
 import { useTranslate } from "../i18n";
 
 export default function AnimalSelectorWithTabs() {
