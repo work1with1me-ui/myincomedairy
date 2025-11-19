@@ -763,7 +763,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { Menu, X, User, Phone, Home, LogOut, ChevronRight, Building2, Landmark, Map, Pin } from 'lucide-react';
-import { useSidebar } from '../context/sidebarContext';
+import { useSidebar } from '../context/SidebarContext';
 import LogoutModal from './LogoutModel';
 import { useTranslate } from '../i18n';
 
