@@ -1481,20 +1481,20 @@
 // 18-Nov edit
 import pdfMake from "pdfmake/build/pdfmake";
 import store from "../redux/store";
-import NotoSansDevanagariBase64 from "../assets/fonts/NotoSansDevanagari-Regular";
-import Roboto from "../assets/fonts/RobotoRegular";
+// import NotoSansDevanagariBase64 from "../assets/fonts/NotoSansDevanagari-Regular";
+// import Roboto from "../assets/fonts/RobotoRegular";
 import { stableExpensesDefault, foodExpensesDefault, vaidanExpensesDefault } from "../data/expensesDefaults";
 import { data, useLocation } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import vetrinaLogoBase64 from "../assets/fonts/VetrinaLogoBase";
-import NotoSansBengaliBase64 from "../assets/fonts/NotoSansBengali";
-import NotoSansTamilBase64 from "../assets/fonts/NotoSansTamil";
+// import NotoSansBengaliBase64 from "../assets/fonts/NotoSansBengali";
+// import NotoSansTamilBase64 from "../assets/fonts/NotoSansTamil";
 import textLogoBase64 from "../assets/fonts/TextLogoBase";
-import NotoSansKannadaBase64 from "../assets/fonts/NotoSansKannada";
-import NotoSansGurmukhiBase64 from "../assets/fonts/NotoSansGurmukhi";
-import NotoSansTeluguBase64 from "../assets/fonts/NotoSansTelugu";
-import NotoSansMalayalamBase64 from "../assets/fonts/NotoSansMalayalam";
-import NotoSansGujaratiBase64 from "../assets/fonts/NotoSansGujarati";
+// import NotoSansKannadaBase64 from "../assets/fonts/NotoSansKannada";
+// import NotoSansGurmukhiBase64 from "../assets/fonts/NotoSansGurmukhi";
+// import NotoSansTeluguBase64 from "../assets/fonts/NotoSansTelugu";
+// import NotoSansMalayalamBase64 from "../assets/fonts/NotoSansMalayalam";
+// import NotoSansGujaratiBase64 from "../assets/fonts/NotoSansGujarati";
 import { loadAllFonts } from "@/utils/loadfonts";
 
 // pdfMake.vfs = pdfMake.vfs || {};
@@ -1569,6 +1569,7 @@ import { loadAllFonts } from "@/utils/loadfonts";
 //     bolditalics: "NotoSansGujarati-Regular.ttf"
 //   },
 // };
+pdfMake.vfs = pdfMake.vfs || {};
 
 
 await loadAllFonts();
