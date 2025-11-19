@@ -1,0 +1,143 @@
+//"subTitle": "आपले दुध उत्पादन मापन करा आणि उत्पन्न मोजा",
+"dailyLabel": "दैनिक स्थिर खर्च",
+  "relatedFodderLabel" : "जनावरांच्या वैरणी संबंधित खर्च",
+  "relatedFeedLabel" : "जनावरांच्या खाद्याशी संबंधित एकूण खर्च",
+
+
+
+
+
+
+If you want to persist Redux data after refresh, use redux-persist:
+
+npm install redux-persist
+
+
+Then wrap your store like this (in store.js):
+
+import { configureStore } from "@reduxjs/toolkit";
+import dairyReducer from "./dairySlice";
+import storage from "redux-persist/lib/storage";
+import { persistReducer, persistStore } from "redux-persist";
+
+const persistConfig = { key: "dairy", storage };
+const persistedReducer = persistReducer(persistConfig, dairyReducer);
+
+export const store = configureStore({
+  reducer: { dairy: persistedReducer },
+});
+
+export const persistor = persistStore(store);
+
+
+//✅ This way, cow and buffalo data stay even after reload.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extra code 
+
+
+5:56:24 PM [vite] (client) warning: Duplicate key "styles" in object literal
+2151 |        font: font
+2152 |      },
+2153 |      styles: {
+     |      ^
+2154 |        header: {
+2155 |          fontSize: 18,
+
+  Plugin: vite:esbuild
+  File: C:/Users/DELL/Desktop/Dairy-Project-folder/src/components/GeneratePdf.jsx
+Terminate batch job (Y/N)? 
+
+
+
+
+
+
+
+ <div className="flex-1 overflow-y-auto px-3 py-4">
+          <div className="mb-4">
+            {sidebarExpanded && (
+              <p className="text-blue-200 text-xs font-semibold uppercase tracking-wider px-3 mb-2">
+                Platform
+              </p>
+            )}
+            
+            {/* Playground - Expandable */}
+            <div className="mb-1">
+              <button
+                onClick={() => setPlaygroundOpen(!playgroundOpen)}
+                className="w-full flex items-center justify-between px-3 py-2 text-white hover:bg-white hover:bg-opacity-20 rounded-lg transition-colors group"
+              >
+                <div className="flex items-center gap-3">
+                  <Box size={20} className="flex-shrink-0" />
+                  {sidebarExpanded && <span className="text-sm font-medium">Playground</span>}
+                </div>
+                {sidebarExpanded && (
+                  <ChevronDown size={16} className={`transition-transform ${playgroundOpen ? '' : '-rotate-90'}`} />
+                )}
+              </button>
+              
+              {sidebarExpanded && playgroundOpen && (
+                <div className="ml-9 mt-1 space-y-1">
+                  <a href="#" className="block px-3 py-2 text-sm text-blue-100 hover:text-white hover:bg-white hover:bg-opacity-10 rounded-lg transition-colors">
+                    History
+                  </a>
+                  <a href="#" className="block px-3 py-2 text-sm text-blue-100 hover:text-white hover:bg-white hover:bg-opacity-10 rounded-lg transition-colors">
+                    Starred
+                  </a>
+                  <a href="#" className="block px-3 py-2 text-sm text-blue-100 hover:text-white hover:bg-white hover:bg-opacity-10 rounded-lg transition-colors">
+                    Settings
+                  </a>
+                </div>
+              )}
+            </div>
+
+            {/* Models */}
+            <button className="w-full flex items-center justify-between px-3 py-2 text-white hover:bg-white hover:bg-opacity-20 rounded-lg transition-colors group mb-1">
+              <div className="flex items-center gap-3">
+                <Box size={20} className="flex-shrink-0" />
+                {sidebarExpanded && <span className="text-sm font-medium">Models</span>}
+              </div>
+              {sidebarExpanded && (
+                <ChevronRight size={16} className="text-blue-200 group-hover:text-white" />
+              )}
+            </button>
+
+            {/* Documentation */}
+            <button className="w-full flex items-center justify-between px-3 py-2 text-white hover:bg-white hover:bg-opacity-20 rounded-lg transition-colors group mb-1">
+              <div className="flex items-center gap-3">
+                <BookOpen size={20} className="flex-shrink-0" />
+                {sidebarExpanded && <span className="text-sm font-medium">Documentation</span>}
+              </div>
+              {sidebarExpanded && (
+                <ChevronRight size={16} className="text-blue-200 group-hover:text-white" />
+              )}
+            </button>
+
+            {/* Settings */}
+            <button className="w-full flex items-center justify-between px-3 py-2 text-white hover:bg-white hover:bg-opacity-20 rounded-lg transition-colors group">
+              <div className="flex items-center gap-3">
+                <Settings size={20} className="flex-shrink-0" />
+                {sidebarExpanded && <span className="text-sm font-medium">Settings</span>}
+              </div>
+              {sidebarExpanded && (
+                <ChevronRight size={16} className="text-blue-200 group-hover:text-white" />
+              )}
+            </button>
+          </div>
+        </div> 

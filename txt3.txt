@@ -1,0 +1,71 @@
+//   return (
+//     <>
+//     <div className="bg-white">
+//       {/*  Cow / Buffalo selector */}
+//       {/* <AnimalSelector /> */}
+//        <Header/>
+//       {/* Two toggle buttons */}
+//         {/* <div className="hidden lg:block w-[260px] ml-6">
+//         <Sidebar />
+//     </div> */}
+   
+//       <TabContent/>
+//     <div 
+//     className=" bg-white/80 backdrop-blur-md rounded-2xl shadow-sm 
+//              flex items-center justify-center border border-orange-300 sm:border-none
+//              sm:bg-transparent sm:backdrop-blur-0 
+//              sm:shadow-none sm:rounded-none lg:mx-0 lg:mt-0 lg:px-0 lg:py-0 lg:mr-5 px-3 py-6 mx-3">
+//       <div className="flex justify-center gap-4 ">
+//         <button
+//           onClick={() => setActiveTab("milk")}
+//           className={`px-6 py-3 rounded-full font-semibold text-sm sm:text-base transition-all duration-300 
+//           ${activeTab === "milk"
+//               ? "bg-orange-600 text-white shadow-lg scale-105"
+//               : "bg-orange-100 text-orange-700 hover:bg-orange-200"}`}
+//         >
+//           दूध उत्पादन ताळमेळ
+//         </button>
+
+//         <button
+//           onClick={() => setActiveTab("repro")}
+//           className={`px-6 py-3 rounded-full font-semibold text-sm sm:text-base transition-all duration-300 
+//           ${activeTab === "repro"
+//               ? "bg-orange-600 text-white shadow-lg scale-105"
+//               : "bg-orange-100 text-orange-700 hover:bg-orange-200"}`}
+//         >
+//           प्रजनन व्यवस्थापन
+//         </button>
+//       </div>
+//    </div>
+ 
+//   <div className="mt-8 px-5">
+  
+//   {activeTab === "milk" ? (
+//     <> 
+//       <MilkProductionExpenses />
+//       <div className="mt-1 space-y-8">
+//         <StableExpenses />
+//         <VaidanExpenses />
+//         <FoodExpenses />
+//         <FinancialSummary />
+//         <TotalFnlSummary />
+//       </div>
+//     </>
+//   ) : (
+//     <Repomanagement />
+//   )}
+// </div>
+ 
+// <footer class="bg-neutral-primary-soft max-w-5xl mx-auto text-center  rounded-base shadow-xs  m-1">
+  
+//         {/* <hr class="sm:mx-auto"/> */}
+//         <span class="block text-sm  sm:text-center text-gray-500">© 2025 <a href="" class="hover:underline">Vetrina Healthcare Pvt.Ltd.</a> All Rights Reserved.</span>
+    
+// </footer>
+
+
+     
+//     </div>
+//     </>
+//   );
+// }
