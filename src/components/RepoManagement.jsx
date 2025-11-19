@@ -798,6 +798,7 @@ const Repomanagement = () => {
                   </label>
                   <input
                     type="date"
+                    placeholder="DD/MM/YYYY"
                     value={animal.heatDate || ""}
                     onChange={(e) => handleDateChange("heatDate", e)}
                     className="w-full px-4 py-2.5 border-2 border-orange-200 rounded-lg 
@@ -815,6 +816,7 @@ const Repomanagement = () => {
                   </label>
                   <input
                     type="date"
+                    placeholder="DD/MM/YYYY"
                     value={animal.inseminationDate || ""}
                     onChange={(e) => handleDateChange("inseminationDate", e)}
                     className="w-full px-4 py-2.5 border-2 border-orange-200 rounded-lg 
