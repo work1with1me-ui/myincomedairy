@@ -1,38 +1,3 @@
-// Default expenses for Dairy Project
-/*
-export const stableExpensesDefault = [
-  { item: "मजुरी", rate: 0 },
-  { item: "वीज", rate: 0 },
-  { item: "औषधे", rate: 0 },
-  { item: "पाणी भाडे", rate: 0 },
-  { item: "शेड भाडे", rate: 0 },
-  { item: "विमा", rate: 0 },
-  { item: "गाडी भाडे", rate: 0 },
-];
-*/
-
-/*
-export const foodExpensesDefault = [
-  { item: "गोडी पेंड", qty: 0, rate: 0 },
-  { item: "सारकी", qty: 0, rate: 0 },
-  { item: "शेंगदाणा पेंड", qty: 0, rate: 0 },
-  { item: "गहू भुसा", qty: 0, rate: 0 },
-  { item: "डीडीजीएस", qty: 0, rate: 0 },
-  { item: "मक्का भरडा", qty: 0, rate: 0 },
-  { item: "इतर", qty: 0, rate: 0 },
-];
-/*
-export const vaidanExpensesDefault = [
-  { item: "मुरघास", praman: 0, rate: 0 },
-  { item: "ऊसाचे वाढे", praman: 0, rate: 0 },
-  { item: "हिरवा मक्का", praman: 0, rate: 0 },
-  { item: "नेपिअर", praman: 0, rate: 0 },
-  { item: "कडवळ", praman: 0, rate: 0 },
-  { item: "इतर", praman: 0, rate: 0 },
-];
-*/
-
-
 export const stableExpensesDefault = [
   {
     item: {
@@ -145,7 +110,6 @@ export const foodExpensesDefault = [
   {
     // working 
     item: {
-
       en: "Oilseed Cake Pellets",
       hi: "तेल बीज खल / गोली पेंड",
       mr: "गोळी पेंड",
@@ -159,6 +123,22 @@ export const foodExpensesDefault = [
     },
     qty: 0,
     rate: 0,
+  },
+  {
+    item: {
+      en: "Transition Feed",
+      hi: "ट्रांज़िशन फीड",
+      mr: "ट्रान्झिशन फीड",
+      bn: "ট্রানজিশন ফিড",
+      ta: "டிரான்சிஷன் தீவு",
+      te: "ట్రాన్సిషన్ ఫీడ్",
+      gu: "ટ્રાન્ઝિશન ફીડ",
+      kn: "ಟ್ರಾನ್ಸಿಷನ್ ಫೀಡ್",
+      ml: "ട്രാൻസിഷൻ ഫീഡ്",
+      pa: "ਟ੍ਰਾਂਜ਼ਿਸ਼ਨ ਫੀਡ"
+    },
+    qty: 0,
+    rate: 0
   },
   {
     // working 
@@ -294,8 +274,8 @@ export const vaidanExpensesDefault = [
   },
   {
     item: {
-      en: "Chaff Cutter",
-      hi: "चारा कटर",
+      en: "Chaff",
+      hi: "चारा कुट्टी",
       mr: "कडबा कुट्टी",
       bn: "চারা কাটা",
       ta: "தீவன வெட்டு",
