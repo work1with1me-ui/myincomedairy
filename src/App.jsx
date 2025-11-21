@@ -219,8 +219,6 @@
 //   );
 // }
 
-
-
 import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import { TranslationProvider } from "./i18n";
@@ -230,6 +228,7 @@ import Login from "./pages/login";
 import WebsiteLoader from "./loader/loader";
 import OfflineWarning from "./components/OfflineWarning";
 import { SidebarProvider } from "./context/SidebarContext";
+import PrivateRoute from "./routes/PrivateRoute";
 
 
 export default function App() {
@@ -317,8 +316,16 @@ export default function App() {
               <Route path="/login" element={<Login />} />
 
               {/* DASHBOARD PAGES */}
-              <Route path="/cow" element={<AnimalSelectorWithTabs key="cow" />} />
-              <Route path="/buffalo" element={<AnimalSelectorWithTabs key="buffalo" />} />
+              <Route path="/cow" element={
+                <PrivateRoute>
+                <AnimalSelectorWithTabs key="cow" />
+                </PrivateRoute>
+                } />
+              <Route path="/buffalo" element={
+                <PrivateRoute>
+                <AnimalSelectorWithTabs key="buffalo"/>
+                </PrivateRoute>
+                } />
 
             </Routes>
           </TabProvider>
@@ -327,3 +334,4 @@ export default function App() {
     </TranslationProvider>
   );
 }
+
