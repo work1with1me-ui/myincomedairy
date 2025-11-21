@@ -911,13 +911,13 @@ export function ModernSidebar() {
               </div>
 
               {/* Logout Button */}
-              <button
+              {/* <button
                 onClick={() => setShowLogoutModal(true)}
                 className="w-full bg-gradient-to-r from-red-500 to-pink-600 hover:from-red-600 hover:to-pink-700 text-white py-3 rounded-lg flex items-center justify-center gap-2 transition-all shadow-lg font-semibold transform hover:scale-105 duration-300"
               >
                 <LogOut size={18} />
                 {t.logoutbtnLabel || "Logout"}
-              </button>
+              </button> */}
             </>
           ) : (
             <div className="flex flex-col items-center gap-4">
@@ -936,13 +936,14 @@ export function ModernSidebar() {
               <div className="w-10 h-10 bg-gradient-to-br from-pink-500 to-orange-400 rounded-full flex items-center justify-center shadow-lg">
                 <Pin size={20} className="text-white" />
               </div>
+             {/*               
               <button
                 onClick={() => setShowLogoutModal(true)}
                 className="text-white hover:text-red-100 transition-colors"
                 title="Logout"
               >
                 <LogOut size={18} />
-              </button>
+              </button> */}
             </div>
           )}
         </div>
