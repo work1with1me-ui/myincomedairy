@@ -229,7 +229,7 @@ import WebsiteLoader from "./loader/loader";
 import OfflineWarning from "./components/OfflineWarning";
 import { SidebarProvider } from "./context/SidebarContext";
 import PrivateRoute from "./routes/PrivateRoute";
-
+import { Analytics } from "@vercel/analytics/react"
 
 export default function App() {
   const [loading, setLoading] = useState(true);
@@ -331,6 +331,7 @@ export default function App() {
           </TabProvider>
         </SidebarProvider>
       </Router>
+     <Analytics/>
     </TranslationProvider>
   );
 }
