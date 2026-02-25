@@ -326,12 +326,12 @@ export default function App() {
                 <AnimalSelectorWithTabs key="buffalo"/>
                 </PrivateRoute>
                 } />
-
+              <Analytics/>
             </Routes>
           </TabProvider>
         </SidebarProvider>
       </Router>
-     <Analytics/>
+    
     </TranslationProvider>
   );
 }
