@@ -242,7 +242,7 @@ export default function App() {
       setIsOnline(true);
       console.log('✅ Internet connection restored');
     };
-    
+
     const handleOffline = () => {
       setIsOnline(false);
       console.log('❌ Internet connection lost');
@@ -303,36 +303,38 @@ export default function App() {
   }
 
   return (
-    <TranslationProvider>
-      <Router>
-         <SidebarProvider>
-          <TabProvider>
-            <Routes>
+    <>
+      <TranslationProvider>
+        <Router>
+          <SidebarProvider>
+            <TabProvider>
+              <Routes>
 
-              {/* DEFAULT ROUTE = LOGIN */}
-              <Route path="/" element={<Navigate to="/login" replace />} />
+                {/* DEFAULT ROUTE = LOGIN */}
+                <Route path="/" element={<Navigate to="/login" replace />} />
 
-              {/* LOGIN PAGE */}
-              <Route path="/login" element={<Login />} />
+                {/* LOGIN PAGE */}
+                <Route path="/login" element={<Login />} />
 
-              {/* DASHBOARD PAGES */}
-              <Route path="/cow" element={
-                <PrivateRoute>
-                <AnimalSelectorWithTabs key="cow" />
-                </PrivateRoute>
+                {/* DASHBOARD PAGES */}
+                <Route path="/cow" element={
+                  <PrivateRoute>
+                    <AnimalSelectorWithTabs key="cow" />
+                  </PrivateRoute>
                 } />
-              <Route path="/buffalo" element={
-                <PrivateRoute>
-                <AnimalSelectorWithTabs key="buffalo"/>
-                </PrivateRoute>
+                <Route path="/buffalo" element={
+                  <PrivateRoute>
+                    <AnimalSelectorWithTabs key="buffalo" />
+                  </PrivateRoute>
                 } />
-              <Analytics/>
-            </Routes>
-          </TabProvider>
-        </SidebarProvider>
-      </Router>
-    
-    </TranslationProvider>
+              </Routes>
+            </TabProvider>
+          </SidebarProvider>
+        </Router>
+
+      </TranslationProvider>
+      <Analytics />
+    </>
   );
 }
 
